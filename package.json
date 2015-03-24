@@ -1,9 +1,9 @@
 {
-  "name": "gulp-crash-sound",
-  "description": "Play a WAV or MP3 when gulp crashes.",
+  "name": "gulp-crash-wav-sound",
+  "description": "Play a WAV when gulp crashes.",
   "version": "0.0.1",
   "author": {
-    "name": "Zac Barton"
+    "name": "Zac Barton, KostasX"
   },
   "repository": {
     "type": "git",
@@ -11,7 +11,6 @@
   },
   "dependencies": {
     "wav": "0.1.2",
-    "lame": "1.1.0",
     "gulp-util": "2.2.19"
   },
   "keywords": [
