@@ -14,17 +14,17 @@ This plugin is a trimmed down version of [gulp-crash-sound](https://www.npmjs.co
 Installation
 --------
 
-    $ npm install -g gulp-crash-sound
+    $ npm install -g gulp-crash-wav-sound
 
 
 Examples
 --------
 
-The following examples show you 3 ways to use gulp-crash-sound.
+The following examples show you 3 ways to use gulp-crash-wav-sound.
 
 1\. Just include and use defaults.
 ```javascript
-var gCrashSound = require('gulp-crash-sound');
+var gCrashSound = require('gulp-crash-wav-sound');
 
 gulp.task('build', function() {
 	gulp.src('/some/path');
@@ -34,7 +34,7 @@ gulp.task('build', function() {
 
 2\. Play a sound in your error handler.
 ```javascript
-var gCrashSound = require('gulp-crash-sound');
+var gCrashSound = require('gulp-crash-wav-sound');
 
 function yourOnErrorFunction(err) {
 	gCrashSound.play();
@@ -47,7 +47,7 @@ function yourOnErrorFunction(err) {
 
 3\. Wrap gulp-plumber.
 ```javascript
-var gCrashSound = require('gulp-crash-sound');
+var gCrashSound = require('gulp-crash-wav-sound');
 
 // somewhere in gupfile.js
 .pipe(plumber({
@@ -63,7 +63,7 @@ Configuration
 The default sound is a '[gulp][2]' but you can use any WAV (drm free).
 
 ```javascript
-var gCrashSound = require('gulp-crash-sound');
+var gCrashSound = require('gulp-crash-wav-sound');
 
 gCrashSound.config({
 	file: '/path/to/your/wav/'
