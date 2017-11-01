@@ -39,6 +39,7 @@ function config(options) {
 				return gutil.log('[' + gutil.colors.red('gulp-crash-sound') + ']', 'Only WAV files are supported');
 			}
 			
+			sound.file = options.file;
 		});
 	}
 }
